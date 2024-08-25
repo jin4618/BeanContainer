@@ -37,5 +37,6 @@ public class ReviewController {
     public String getReview(@PathVariable("cafeId") Long cafeId, Model model) {
         model.addAttribute("cafeId", cafeId);
         return "review/reviews";
+//        return "/review/reviews :: reviews";
     }
 }

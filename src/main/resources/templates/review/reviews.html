@@ -11,13 +11,13 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/header.css}">
     <link rel="icon" href="/images/favicon.ico">
 </head>
+<th:block th:fragment="reviews">
 <body>
 <div th:replace="fragments/header :: header"></div>
-
+<!--<div th:fragment="review-content">-->
 <div class="container">
 <div id="cafe-info"></div>
 <h2>Review</h2>
-
 <div class="review-form">
     <div class="star-rating">
         <input type="radio" id="star5" name="rating" value="5">
@@ -64,11 +64,12 @@
     <textarea id="review-content" rows="4" cols="50"></textarea>
     <button id="submit-review">Submit Review</button>
 </div>
-
 <h3>리뷰</h3>
 <div id="review-list"></div>
 
-<script src="/js/review/review.js"></script>
+    <script src="/js/review/review.js"></script>
+</div>
 </div>
 </body>
+<!--</th:block>-->
 </html>
