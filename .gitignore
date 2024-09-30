@@ -47,5 +47,5 @@ settings.gradle
 # 테스트 db
 src/test/*
 
-
-
+# Ignore application.yml in resources
+src/main/resources/application.yml
