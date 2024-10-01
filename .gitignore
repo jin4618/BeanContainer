@@ -49,3 +49,5 @@ src/test/*
 
 # Ignore application.yml in resources
 src/main/resources/application.yml
+*.yml
+*.application
